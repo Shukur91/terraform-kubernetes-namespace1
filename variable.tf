@@ -9,3 +9,4 @@ variable number_of_pods {
   default     = "36"
   description = "The number of pods to create"
 }
+

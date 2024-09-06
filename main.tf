@@ -21,8 +21,3 @@ resource "kubernetes_resource_quota" "pod" {
 
 
 
-variable labels {
-  type        = map
-  default     = {}
-  description = "Labels to apply to the namespace"
-}

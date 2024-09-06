@@ -11,7 +11,13 @@ variable number_of_pods {
 }
 
 variable labels {
-  type        = map
+  type        = map(any)
   default     = {}
   description = "Labels to apply to the namespace"
+}
+
+variable "annotations" {
+  type        = map(string)
+  default     = {}
+  description = "Annotations to apply to resources"
 }
